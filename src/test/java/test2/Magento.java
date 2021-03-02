@@ -31,8 +31,8 @@ public class Magento {
     Select country=new Select(driver.findElement(By.id("country")));
     country.selectByValue("US");
     
-    driver.findElement(By.id("password")).sendKeys("password@123");
-    driver.findElement(By.id("password-confirmation")).sendKeys("password@123");
+    driver.findElement(By.id("password")).sendKeys("password@1234");
+    driver.findElement(By.id("password-confirmation")).sendKeys("password@1234");
     driver.switchTo().frame(driver.findElement(By.xpath("//*[@id=\"recaptcha-f979c2ff515d921c34af9bd2aee8ef076b719d03\"]/div/div/iframe")));
     driver.findElement(By.className("recaptcha-checkbox-border")).click();
     driver.switchTo().defaultContent();
